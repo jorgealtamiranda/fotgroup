@@ -1,0 +1,13 @@
+# Ignorar archivos del sistema de Windows
+desktop.ini
+Desktop.ini
+
+# Ignorar carpeta de configuración de Claude
+.claude/
+
+# Ignorar documentos de Word y PDFs
+*.docx
+*.pdf
+
+# Ignorar archivos Markdown
+*.md

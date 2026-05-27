@@ -1,0 +1,880 @@
+<!DOCTYPE html>
+<html lang="es" class="lenis">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="FOT Group — Desarrollo inmobiliario, gestión de proyectos, marketing, comercialización e inversión. Una mirada integral del negocio inmobiliario." />
+  <title>FOT Group — Desarrollo Inmobiliario Integral</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/images/favicon.png" />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="FOT Group — Desarrollo Inmobiliario Integral" />
+  <meta property="og:description" content="FOT Group — Desarrollo inmobiliario, gestión de proyectos, marketing, comercialización e inversión. Una mirada integral del negocio inmobiliario." />
+  <meta property="og:image" content="assets/images/fot (6).webp" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'mn-dark': '#090402',
+            'mn-surface': '#F7F7F7',
+            'mn-accent': '#C8A96A',
+            'mn-muted': '#6B6B6B',
+          },
+          fontFamily: {
+            'heading': ['Urbanist', 'sans-serif'],
+            'body': ['"DM Sans"', 'sans-serif'],
+          },
+        }
+      }
+    }
+  </script>
+
+  <!-- AOS -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+
+  <!-- Custom Design System -->
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body>
+
+  <!-- LOADER -->
+  <div id="loader">
+    <img src="assets/images/logo-blanco.svg" alt="FOT Group" />
+  </div>
+
+  <!-- PROGRESS BAR -->
+  <div id="progress-bar"></div>
+
+  <!-- TOAST -->
+  <div id="toast" role="alert" aria-live="polite"></div>
+
+
+  <!-- ================================================================
+     NAVIGATION
+================================================================ -->
+  <nav id="navbar">
+    <div class="container">
+
+      <a href="#inicio" class="nav-logo-link" aria-label="FOT Group — Inicio">
+        <img id="logo-blanco" class="nav-logo-img" src="assets/images/logo-blanco.svg" alt="FOT Group" />
+        <img id="logo-dark" class="nav-logo-img" src="assets/images/logo.svg" alt="FOT Group" />
+      </a>
+
+      <div id="nav-desktop">
+        <a href="#inicio" class="nav-link">Inicio</a>
+        <a href="#nosotros" class="nav-link">Nosotros</a>
+        <a href="#desarrollos" class="nav-link">Desarrollos</a>
+        <a href="#marketing" class="nav-link">Marketing</a>
+        <a href="#comercializacion" class="nav-link">Comercialización</a>
+        <a href="#servicios" class="nav-link">Servicios</a>
+        <a href="#contacto" class="nav-cta">Contacto</a>
+      </div>
+
+      <button id="hamburger" class="hamburger" aria-label="Abrir menú">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div id="mobile-menu">
+    <a href="#inicio" class="mobile-link">Inicio</a>
+    <a href="#nosotros" class="mobile-link">Nosotros</a>
+    <a href="#desarrollos" class="mobile-link">Desarrollos</a>
+    <a href="#marketing" class="mobile-link">Marketing Inmobiliario</a>
+    <a href="#comercializacion" class="mobile-link">Comercialización</a>
+    <a href="#servicios" class="mobile-link">Servicios</a>
+    <a href="#contacto" class="mobile-link">Contacto</a>
+  </div>
+
+
+  <!-- ================================================================
+     HERO  #inicio
+================================================================ -->
+  <section id="inicio">
+    <div class="hero-wrap">
+      <div class="hero-bg"></div>
+      <div class="hero-overlay"></div>
+
+      <div class="container hero-content">
+        <div class="max-w-4xl">
+
+          <p class="t-label mb-8" data-aos="fade-up" data-aos-duration="700">
+            Desarrollo Inmobiliario Integral
+          </p>
+
+          <h1 class="t-hero text-white mb-8 leading-none" data-aos="fade-up" data-aos-duration="900"
+            data-aos-delay="80">
+            El mercado define el proyecto, nosotros el negocio.
+          </h1>
+
+          <p class="t-body-lg text-white/70 max-w-xl mb-12" data-aos="fade-up" data-aos-duration="800"
+            data-aos-delay="160">
+            Producto, gestión, marketing, comercialización e inversión trabajando desde el origen de cada desarrollo.
+          </p>
+
+          <div class="flex flex-wrap gap-4" data-aos="fade-up" data-aos-duration="700" data-aos-delay="240">
+            <a href="#desarrollos" class="btn btn-primary btn-lg">Conocé nuestros desarrollos</a>
+            <a href="#contacto" class="btn btn-outline-white btn-lg">Contactanos</a>
+          </div>
+
+        </div>
+      </div>
+
+      <button id="hero-scroll" class="hero-scroll-hint" aria-label="Scroll">
+        <span>Scroll</span>
+        <span class="hero-scroll-line"></span>
+      </button>
+    </div>
+  </section>
+
+
+  <!-- ================================================================
+     TICKER
+================================================================ -->
+  <div class="ticker-wrap">
+    <div class="ticker-track">
+      <span class="ticker-item">Desarrollo de Producto</span>
+      <span class="ticker-item">—</span>
+      <span class="ticker-item">Dirección y Gestión</span>
+      <span class="ticker-item">—</span>
+      <span class="ticker-item">Marketing Inmobiliario</span>
+      <span class="ticker-item">—</span>
+      <span class="ticker-item">Comercialización</span>
+      <span class="ticker-item">—</span>
+      <span class="ticker-item">Inversión</span>
+      <span class="ticker-item">—</span>
+      <span class="ticker-item">Consultoría</span>
+      <span class="ticker-item">—</span>
+      <!-- duplicado para loop continuo -->
+      <span class="ticker-item">Desarrollo de Producto</span>
+      <span class="ticker-item">—</span>
+      <span class="ticker-item">Dirección y Gestión</span>
+      <span class="ticker-item">—</span>
+      <span class="ticker-item">Marketing Inmobiliario</span>
+      <span class="ticker-item">—</span>
+      <span class="ticker-item">Comercialización</span>
+      <span class="ticker-item">—</span>
+      <span class="ticker-item">Inversión</span>
+      <span class="ticker-item">—</span>
+      <span class="ticker-item">Consultoría</span>
+      <span class="ticker-item">—</span>
+    </div>
+  </div>
+
+
+  <!-- ================================================================
+     OVERVIEW  #overview
+================================================================ -->
+  <section id="overview" class="bg-surface section-py">
+    <div class="container">
+
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-center">
+
+        <!-- Texto -->
+        <div class="section-header" data-aos="fade-right" data-aos-duration="800">
+          <span class="section-divider"></span>
+          <h2 class="t-h2 mb-6">Una visión integral del negocio inmobiliario.</h2>
+        </div>
+
+        <!-- Video -->
+        <div data-aos="fade-left" data-aos-duration="800" data-aos-delay="100"
+             style="overflow:hidden; border-radius:4px; line-height:0; position:relative; aspect-ratio:4/3;">
+          <video
+            src="assets/video/video.mp4"
+            autoplay
+            muted
+            loop
+            playsinline
+            style="position:absolute; top:-4%; left:-4%; width:108%; height:108%; object-fit:cover; display:block;"
+          ></video>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ================================================================
+     NOSOTROS  #nosotros
+================================================================ -->
+  <section id="nosotros" class="bg-base section-py">
+    <div class="container">
+
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-center">
+
+        <!-- Imagen -->
+        <div data-aos="fade-right" data-aos-duration="800">
+          <div class="nosotros-img-wrap">
+            <img src="assets/images/fot (6).webp" alt="Equipo FOT Group" class="nosotros-img" loading="lazy" />
+          </div>
+        </div>
+
+        <!-- Texto -->
+        <div data-aos="fade-left" data-aos-duration="800" data-aos-delay="100">
+
+          <p class="t-label">Nosotros</p>
+          <span class="section-divider"></span>
+          <h2 class="t-h2 mb-8">Una estructura de trabajo para el negocio inmobiliario completo.</h2>
+
+          <p class="t-body mb-5">FOT Group reúne desarrollo inmobiliario, gestión de proyectos, marketing,
+            comercialización e inversión bajo una misma estructura de trabajo.</p>
+          <p class="t-body mb-5">Los proyectos no se piensan únicamente desde lo técnico. Antes de avanzar, se analiza
+            el mercado, la demanda, el producto posible y la oportunidad real. Esa lectura inicial permite ordenar
+            decisiones desde el origen.</p>
+          <p class="t-body mb-10">El marketing inmobiliario y la comercialización forman parte del proceso desde etapas
+            tempranas. No aparecen al final, sino que intervienen en la definición del producto, su posicionamiento, su
+            presentación y su recorrido comercial.</p>
+
+          <div class="flex flex-wrap gap-4">
+            <a href="#contacto" class="btn btn-outline-dark">Hablemos de tu proyecto</a>
+            <button id="open-nosotros-modal" class="btn btn-primary">Nuestros Pilares</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ================================================================
+     STATS  (dark)
+================================================================ -->
+  <section style="padding-block: var(--space-xxl); background-color: #090402;">
+    <div class="container">
+      <div class="grid grid-cols-2 md:grid-cols-4">
+
+        <div class="stat-item px-6" data-aos="fade-up" data-aos-delay="0">
+          <p class="stat-num">12+</p>
+          <p class="stat-label">Años de experiencia</p>
+        </div>
+        <div class="stat-item px-6" data-aos="fade-up" data-aos-delay="80">
+          <p class="stat-num">35+</p>
+          <p class="stat-label">Proyectos gestionados</p>
+        </div>
+        <div class="stat-item px-6" data-aos="fade-up" data-aos-delay="160">
+          <p class="stat-num">6</p>
+          <p class="stat-label">Áreas integradas</p>
+        </div>
+        <div class="stat-item px-6" data-aos="fade-up" data-aos-delay="240">
+          <p class="stat-num">100%</p>
+          <p class="stat-label">Visión integral</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ================================================================
+     DESARROLLOS  #desarrollos
+================================================================ -->
+  <section id="desarrollos" class="bg-surface section-py">
+    <div class="container">
+
+      <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-8 mb-16" data-aos="fade-up">
+        <div class="section-header" style="margin-bottom:0;">
+          <p class="t-label">Portfolio</p>
+          <span class="section-divider"></span>
+          <h2 class="t-h2">Desarrollos</h2>
+        </div>
+        <div class="filter-tabs">
+          <button class="filter-btn active" data-filter="all">Todos</button>
+          <button class="filter-btn" data-filter="activo">Activos</button>
+          <button class="filter-btn" data-filter="proximo">Próximos</button>
+          <button class="filter-btn" data-filter="terminado">Terminados</button>
+        </div>
+      </div>
+
+      <div class="grid-3" id="projects-grid">
+
+        <!-- 1 — Panorama Office (primero) -->
+        <article class="project-card" data-status="terminado" data-aos="fade-up" data-aos-delay="0">
+          <div class="project-card-img">
+            <a href="desarrollos/proyecto-panorama-office.html" aria-label="Ver Panorama Office">
+              <img src="assets/images/obras-realizadas/panoramaoffice 1y2.png" alt="Panorama Office" loading="lazy" />
+            </a>
+            <span class="project-card-badge badge-dark">Entregado</span>
+          </div>
+          <div class="project-card-body">
+            <p class="project-card-cat">Comercial / Oficinas</p>
+            <h3 class="project-card-title">Panorama Office</h3>
+            <p class="project-card-loc">Parque Industrial Buen Ayre, Buenos Aires</p>
+            <p class="project-card-desc">Edificio PB + 4 pisos de oficinas con locales comerciales. Sistema constructivo mixto en estructura metálica y hormigón armado.</p>
+            <a href="desarrollos/proyecto-panorama-office.html" class="btn btn-outline-dark" style="padding:10px 22px; font-size:12px;">Ver proyecto</a>
+          </div>
+        </article>
+
+        <!-- 2 — Parque Industrial Buen Ayre -->
+        <article class="project-card" data-status="terminado" data-aos="fade-up" data-aos-delay="80">
+          <div class="project-card-img">
+            <a href="desarrollos/proyecto-parque-industrial-buen-ayre.html" aria-label="Ver Parque Industrial Buen Ayre">
+              <img src="assets/images/obras-realizadas/PARQUE INDUSTRIAL BUEN AYRE.png" alt="Parque Industrial Buen Ayre" loading="lazy" />
+            </a>
+            <span class="project-card-badge badge-dark">Entregado</span>
+          </div>
+          <div class="project-card-body">
+            <p class="project-card-cat">Industrial</p>
+            <h3 class="project-card-title">Parque Industrial Buen Ayre</h3>
+            <p class="project-card-loc">Buenos Aires, Argentina</p>
+            <p class="project-card-desc">Infraestructura de parque industrial: red pluvial, cloacal, cierre perimetral, banda forestal y delimitación de lotes.</p>
+            <a href="desarrollos/proyecto-parque-industrial-buen-ayre.html" class="btn btn-outline-dark" style="padding:10px 22px; font-size:12px;">Ver proyecto</a>
+          </div>
+        </article>
+
+        <!-- 3 — Polo Oeste -->
+        <article class="project-card" data-status="terminado" data-aos="fade-up" data-aos-delay="160">
+          <div class="project-card-img">
+            <a href="desarrollos/proyecto-polo-oeste.html" aria-label="Ver Polo Oeste">
+              <img src="assets/images/obras-realizadas/POLO OESTE EDIFICIO DE OFICINAS .png" alt="Polo Oeste Edificio de Oficinas" loading="lazy" />
+            </a>
+            <span class="project-card-badge badge-dark">Entregado</span>
+          </div>
+          <div class="project-card-body">
+            <p class="project-card-cat">Comercial / Oficinas</p>
+            <h3 class="project-card-title">Polo Oeste — Edificio de Oficinas</h3>
+            <p class="project-card-loc">Morón, Buenos Aires</p>
+            <p class="project-card-desc">Planta baja comercial y 4 pisos de oficinas. Sistema constructivo mixto en estructura metálica y hormigón armado. 2017–2019.</p>
+            <a href="desarrollos/proyecto-polo-oeste.html" class="btn btn-outline-dark" style="padding:10px 22px; font-size:12px;">Ver proyecto</a>
+          </div>
+        </article>
+
+        <!-- 4 — Jardín Vivorata -->
+        <article class="project-card" data-status="terminado" data-aos="fade-up" data-aos-delay="0">
+          <div class="project-card-img">
+            <a href="desarrollos/proyecto-jardin-vivorata.html" aria-label="Ver Jardín Vivorata">
+              <img src="assets/images/obras-realizadas/jardin vivorata.jpg" alt="Jardín Vivorata" loading="lazy" />
+            </a>
+            <span class="project-card-badge badge-dark">Entregado</span>
+          </div>
+          <div class="project-card-body">
+            <p class="project-card-cat">Educación / Público</p>
+            <h3 class="project-card-title">Jardín 903 Vivoratá</h3>
+            <p class="project-card-loc">Mar Chiquita, Buenos Aires</p>
+            <p class="project-card-desc">Jardín de infantes de 510 m² cubiertos + 241 m² semicubiertos. 3 aulas, SUM, comedor y sector administrativo. 2023.</p>
+            <a href="desarrollos/proyecto-jardin-vivorata.html" class="btn btn-outline-dark" style="padding:10px 22px; font-size:12px;">Ver proyecto</a>
+          </div>
+        </article>
+
+        <!-- 5 — San Diego -->
+        <article class="project-card" data-status="terminado" data-aos="fade-up" data-aos-delay="80">
+          <div class="project-card-img">
+            <a href="desarrollos/proyecto-san-diego.html" aria-label="Ver San Diego">
+              <img src="assets/images/obras-realizadas/SAN DIEGO .png" alt="San Diego" loading="lazy" />
+            </a>
+            <span class="project-card-badge badge-dark">Entregado</span>
+          </div>
+          <div class="project-card-body">
+            <p class="project-card-cat">Residencial</p>
+            <h3 class="project-card-title">Vivienda San Diego</h3>
+            <p class="project-card-loc">Francisco Álvarez, Buenos Aires</p>
+            <p class="project-card-desc">Vivienda unifamiliar en Barrio Privado San Diego. Construcción 2021–2023.</p>
+            <a href="desarrollos/proyecto-san-diego.html" class="btn btn-outline-dark" style="padding:10px 22px; font-size:12px;">Ver proyecto</a>
+          </div>
+        </article>
+
+        <!-- 6 — Terravista -->
+        <article class="project-card" data-status="terminado" data-aos="fade-up" data-aos-delay="160">
+          <div class="project-card-img">
+            <a href="desarrollos/proyecto-terravista.html" aria-label="Ver Terravista">
+              <img src="assets/images/obras-realizadas/TERRAVISTA.png" alt="Terravista" loading="lazy" />
+            </a>
+            <span class="project-card-badge badge-dark">Entregado</span>
+          </div>
+          <div class="project-card-body">
+            <p class="project-card-cat">Residencial</p>
+            <h3 class="project-card-title">Vivienda Terravista</h3>
+            <p class="project-card-loc">General Rodríguez, Buenos Aires</p>
+            <p class="project-card-desc">Vivienda unifamiliar en Barrio Privado Terravista. Construcción 2021–2022.</p>
+            <a href="desarrollos/proyecto-terravista.html" class="btn btn-outline-dark" style="padding:10px 22px; font-size:12px;">Ver proyecto</a>
+          </div>
+        </article>
+
+      </div>
+
+      <div class="text-center mt-16" data-aos="fade-up">
+        <a href="desarrollos.html" class="btn btn-primary btn-lg">Ver todos los desarrollos</a>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ================================================================
+     MARKETING INMOBILIARIO  #marketing
+================================================================ -->
+  <section id="marketing" class="bg-base section-py">
+    <div class="container">
+
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-start">
+
+        <!-- Texto -->
+        <div data-aos="fade-right" data-aos-duration="800">
+          <p class="t-label">Estrategia</p>
+          <span class="section-divider"></span>
+          <h2 class="t-h2 mb-8">Marketing Inmobiliario</h2>
+
+          <p class="t-body mb-5">En FOT Group, el marketing inmobiliario se integra desde las primeras decisiones. Antes
+            de presentar un desarrollo al mercado, se analiza la demanda, el contexto, las oportunidades, el
+            posicionamiento y la forma en que el producto debe ser comunicado.</p>
+          <p class="t-body mb-5">Cada desarrollo se concibe como una unidad con identidad propia. El branding, la
+            narrativa comercial, los materiales de venta y la estrategia de lanzamiento se ordenan desde una misma
+            dirección.</p>
+          <p class="t-body mb-10">En proyectos en pozo, esta etapa es clave para construir confianza, explicar valor y
+            acompañar el proceso comercial desde el inicio.</p>
+
+          <a href="#contacto" class="btn btn-outline-dark">Hablar sobre marketing</a>
+        </div>
+
+        <!-- Feature list -->
+        <div data-aos="fade-left" data-aos-duration="800" data-aos-delay="100">
+          <div class="bg-surface p-10">
+            <div class="feature-list">
+              <div class="feature-item">
+                <span class="feature-dot"></span>
+                <div>
+                  <p class="feature-title">Análisis de mercado</p>
+                  <p class="feature-text">Lectura de demanda, benchmarking y posicionamiento previo al lanzamiento.</p>
+                </div>
+              </div>
+              <div class="feature-item">
+                <span class="feature-dot"></span>
+                <div>
+                  <p class="feature-title">Branding inmobiliario</p>
+                  <p class="feature-text">Identidad del proyecto: nombre, paleta, tipografía, tono y narrativa de marca.
+                  </p>
+                </div>
+              </div>
+              <div class="feature-item">
+                <span class="feature-dot"></span>
+                <div>
+                  <p class="feature-title">Estrategia de lanzamiento</p>
+                  <p class="feature-text">Planificación del go-to-market, timing, canales y secuencia comercial.</p>
+                </div>
+              </div>
+              <div class="feature-item">
+                <span class="feature-dot"></span>
+                <div>
+                  <p class="feature-title">Materiales comerciales</p>
+                  <p class="feature-text">Brochures, presentaciones, renders, planos comerciales y kit de ventas.</p>
+                </div>
+              </div>
+              <div class="feature-item">
+                <span class="feature-dot"></span>
+                <div>
+                  <p class="feature-title">Campañas digitales</p>
+                  <p class="feature-text">Planificación y gestión de pauta digital orientada a calificar consultas
+                    reales.</p>
+                </div>
+              </div>
+              <div class="feature-item">
+                <span class="feature-dot"></span>
+                <div>
+                  <p class="feature-title">Presentación para inversores</p>
+                  <p class="feature-text">Decks, memorandos de inversión y materiales para audiencias inversoras.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ================================================================
+     COMERCIALIZACIÓN  #comercializacion
+================================================================ -->
+  <section id="comercializacion" class="bg-surface section-py">
+    <div class="container">
+
+      <div class="section-header" data-aos="fade-up">
+        <p class="t-label">Proceso comercial</p>
+        <span class="section-divider"></span>
+        <h2 class="t-h2">Comercialización</h2>
+      </div>
+
+      <!-- Agregamos items-stretch para que ambas columnas ocupen el mismo alto -->
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-stretch">
+
+        <!-- Columna Izquierda: Cards 2x3 -->
+        <div data-aos="fade-right" data-aos-duration="800" class="flex flex-col h-full">
+          <div class="grid-2 flex-grow" style="gap: var(--space-m);">
+            <div class="service-card">
+              <div class="service-card-num">01</div>
+              <p class="service-card-title">Estrategia comercial</p>
+              <p class="service-card-text">Definición del modelo de venta según producto, etapa y contexto del proyecto.</p>
+            </div>
+            <div class="service-card">
+              <div class="service-card-num">02</div>
+              <p class="service-card-title">Pricing y etapas</p>
+              <p class="service-card-text">Estructura de precios, ajustes por etapa y dinámica de captación de reservas.</p>
+            </div>
+            <div class="service-card">
+              <div class="service-card-num">03</div>
+              <p class="service-card-title">Gestión de consultas</p>
+              <p class="service-card-text">Recepción, calificación y seguimiento de leads con procesos claros de respuesta.</p>
+            </div>
+            <div class="service-card">
+              <div class="service-card-num">04</div>
+              <p class="service-card-title">Seguimiento de oportunidades</p>
+              <p class="service-card-text">Pipeline comercial con visibilidad sobre el estado de cada oportunidad activa.</p>
+            </div>
+            <div class="service-card">
+              <div class="service-card-num">05</div>
+              <p class="service-card-title">Relación con inversores</p>
+              <p class="service-card-text">Comunicación clara, propuestas estructuradas y acompañamiento durante el proceso.</p>
+            </div>
+            <div class="service-card">
+              <div class="service-card-num">06</div>
+              <p class="service-card-title">Reportes comerciales</p>
+              <p class="service-card-text">Seguimiento de indicadores clave: conversión, ritmo de venta y estado del stock.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Columna Derecha: Texto + Quote + Imagen -->
+        <div data-aos="fade-left" data-aos-duration="800" data-aos-delay="100" class="flex flex-col h-full overflow-hidden">
+          <p class="t-body mb-5">La comercialización en FOT Group se define según el producto, la etapa y el contexto de cada proyecto. Cada desarrollo requiere una dinámica comercial propia: ritmo de venta, pricing, canales, narrativa y seguimiento.</p>
+          <p class="t-body mb-5">El trabajo comercial se apoya en información, timing y lectura permanente del mercado. Cada contacto debe transmitir con claridad qué se ofrece, cuál es el valor del proyecto y qué oportunidad representa.</p>
+          <p class="t-body mb-12">El vínculo con inversores también forma parte de esta estructura, con información precisa, propuestas claras y seguimiento durante todo el proceso.</p>
+
+          <div class="quote-block mb-12 flex-shrink-0">
+            <p class="quote-text">"Cada contacto debe transmitir con claridad qué se ofrece, cuál es el valor del proyecto y qué oportunidad representa."</p>
+          </div>
+
+          <div class="nosotros-img-wrap flex-1 relative min-h-0 w-full rounded-sm">
+            <img src="assets/images/fot (4).webp" alt="Comercialización FOT Group" class="nosotros-img absolute inset-0 w-full h-full object-cover" loading="lazy" style="height: 100% !important; max-height: none !important; position: absolute !important;" />
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ================================================================
+     SERVICIOS  #servicios
+================================================================ -->
+  <section id="servicios" class="bg-base section-py">
+    <div class="container">
+
+      <div class="section-header max-w-lg" data-aos="fade-up">
+        <p class="t-label">Lo que hacemos</p>
+        <span class="section-divider"></span>
+        <h2 class="t-h2">Servicios</h2>
+      </div>
+
+      <div class="grid-3">
+
+        <div class="service-card" data-aos="fade-up" data-aos-delay="0">
+          <div class="service-card-num">01</div>
+          <p class="service-card-title">Desarrollo de Producto</p>
+          <p class="service-card-text">Definición estratégica del proyecto desde su origen: tipologías, mix de unidades,
+            atributos diferenciales, costos, valor percibido y posicionamiento.</p>
+        </div>
+
+        <div class="service-card" data-aos="fade-up" data-aos-delay="80">
+          <div class="service-card-num">02</div>
+          <p class="service-card-title">Dirección y Gestión</p>
+          <p class="service-card-text">Coordinación del proyecto, planificación, seguimiento de obra, administración de
+            recursos y control de procesos durante todo el ciclo.</p>
+        </div>
+
+        <div class="service-card" data-aos="fade-up" data-aos-delay="160">
+          <div class="service-card-num">03</div>
+          <p class="service-card-title">Consultoría</p>
+          <p class="service-card-text">Análisis de oportunidades, estudios de factibilidad y diagnóstico de proyectos en
+            curso para ordenar variables antes de tomar decisiones de mayor escala.</p>
+        </div>
+
+        <div class="service-card" data-aos="fade-up" data-aos-delay="0">
+          <div class="service-card-num">04</div>
+          <p class="service-card-title">Inversión</p>
+          <p class="service-card-text">Estructuración de oportunidades, definición de esquemas de participación, armado
+            de propuestas y presentación de información clave para inversores.</p>
+        </div>
+
+        <div class="service-card" data-aos="fade-up" data-aos-delay="80">
+          <div class="service-card-num">05</div>
+          <p class="service-card-title">Marketing Inmobiliario</p>
+          <p class="service-card-text">Branding, comunicación, estrategia de lanzamiento, materiales comerciales y
+            campañas para proyectos inmobiliarios.</p>
+        </div>
+
+        <div class="service-card" data-aos="fade-up" data-aos-delay="160">
+          <div class="service-card-num">06</div>
+          <p class="service-card-title">Comercialización</p>
+          <p class="service-card-text">Definición de estrategia comercial, gestión de consultas, seguimiento de
+            oportunidades y acompañamiento del proceso de venta.</p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ================================================================
+     CONTACTO  #contacto
+================================================================ -->
+  <section id="contacto" class="bg-surface section-py">
+    <div class="container">
+
+      <div class="grid grid-cols-1 lg:grid-cols-5 gap-16 lg:gap-24">
+
+        <!-- Info -->
+        <div class="lg:col-span-2" data-aos="fade-right" data-aos-duration="800">
+
+          <p class="t-label">Contacto</p>
+          <span class="section-divider"></span>
+          <h2 class="t-h2 mb-6">Hablemos de tu próximo desarrollo.</h2>
+          <p class="t-body mb-12">Contactanos para conversar sobre proyectos inmobiliarios, oportunidades de inversión,
+            desarrollo de producto, marketing, comercialización o gestión de proyectos.</p>
+
+          <div>
+            <div class="contact-item">
+              <div class="contact-icon">
+                <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+                  <path
+                    d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.1 11.73 19.9 19.9 0 01.07 3.1 2 2 0 012.06 1h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 8.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z" />
+                </svg>
+              </div>
+              <div>
+                <p class="contact-label">WhatsApp</p>
+                <a href="https://wa.me/5491100000000" target="_blank" rel="noopener" class="contact-value">+54 9 11
+                  0000-0000</a>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-icon">
+                <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                  <polyline points="22,6 12,13 2,6" />
+                </svg>
+              </div>
+              <div>
+                <p class="contact-label">Email</p>
+                <a href="mailto:contacto@fotgroup.com.ar" class="contact-value">contacto@fotgroup.com.ar</a>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-icon">
+                <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" />
+                  <circle cx="12" cy="10" r="3" />
+                </svg>
+              </div>
+              <div>
+                <p class="contact-label">Ubicación</p>
+                <p class="contact-value" style="pointer-events:none;">Buenos Aires, Argentina</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Formulario -->
+        <div class="lg:col-span-3" data-aos="fade-left" data-aos-duration="800" data-aos-delay="100">
+          <form id="contact-form" novalidate class="bg-base p-10">
+
+            <div class="grid-2">
+              <div class="form-group">
+                <label class="form-label" for="nombre">Nombre <span style="color:#c0392b">*</span></label>
+                <input class="form-input" type="text" id="nombre" name="nombre" placeholder="Tu nombre" required
+                  autocomplete="name" />
+                <p class="form-error">Este campo es obligatorio.</p>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="empresa">Empresa</label>
+                <input class="form-input" type="text" id="empresa" name="empresa" placeholder="Nombre de empresa"
+                  autocomplete="organization" />
+              </div>
+            </div>
+
+            <div class="grid-2">
+              <div class="form-group">
+                <label class="form-label" for="telefono">Teléfono</label>
+                <input class="form-input" type="tel" id="telefono" name="telefono" placeholder="+54 9 11 ..."
+                  autocomplete="tel" />
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="email">Email <span style="color:#c0392b">*</span></label>
+                <input class="form-input" type="email" id="email" name="email" placeholder="tu@email.com" required
+                  autocomplete="email" />
+                <p class="form-error">Ingresá un email válido.</p>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="consulta">Tipo de consulta</label>
+              <select class="form-select" id="consulta" name="consulta">
+                <option value="">Seleccioná una opción</option>
+                <option value="Desarrollo inmobiliario">Desarrollo inmobiliario</option>
+                <option value="Inversión">Inversión</option>
+                <option value="Marketing inmobiliario">Marketing inmobiliario</option>
+                <option value="Comercialización">Comercialización</option>
+                <option value="Consultoría">Consultoría</option>
+                <option value="Gestión de proyecto">Gestión de proyecto</option>
+                <option value="Otro">Otro</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="mensaje">Mensaje <span style="color:#c0392b">*</span></label>
+              <textarea class="form-textarea" id="mensaje" name="mensaje"
+                placeholder="Contanos sobre tu proyecto o consulta..." required></textarea>
+              <p class="form-error">Este campo es obligatorio.</p>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-full" style="cursor:pointer;">
+              Enviar mensaje
+            </button>
+
+          </form>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ================================================================
+     FOOTER
+================================================================ -->
+  <footer class="footer-root">
+    <div class="container" style="padding-block: var(--space-xxl);">
+
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
+
+        <div class="md:col-span-2">
+          <div class="footer-logo">
+            <img src="assets/images/logo-blanco.svg" alt="FOT Group" />
+          </div>
+          <p class="footer-tagline">Desarrollo inmobiliario integral. Producto, gestión, marketing, comercialización e
+            inversión trabajando desde el origen de cada desarrollo.</p>
+        </div>
+
+        <div>
+          <p class="footer-col-label">Secciones</p>
+          <a href="#inicio" class="footer-link">Inicio</a>
+          <a href="#nosotros" class="footer-link">Nosotros</a>
+          <a href="#desarrollos" class="footer-link">Desarrollos</a>
+          <a href="#marketing" class="footer-link">Marketing Inmobiliario</a>
+          <a href="#comercializacion" class="footer-link">Comercialización</a>
+          <a href="#servicios" class="footer-link">Servicios</a>
+        </div>
+
+        <div>
+          <p class="footer-col-label">Contacto</p>
+          <a href="mailto:contacto@fotgroup.com.ar" class="footer-link">contacto@fotgroup.com.ar</a>
+          <a href="https://wa.me/5491100000000" target="_blank" rel="noopener" class="footer-link">+54 9 11
+            0000-0000</a>
+          <span class="footer-link" style="cursor:default;">Buenos Aires, Argentina</span>
+        </div>
+
+      </div>
+
+      <div class="footer-divider"></div>
+
+      <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-3">
+        <p class="footer-copy">© 2026 FOT Group. Todos los derechos reservados.</p>
+        <p class="footer-copy">Buenos Aires, Argentina</p>
+      </div>
+
+    </div>
+  </footer>
+
+
+  <!-- ================================================================
+     MODAL NOSOTROS
+================================================================ -->
+  <div id="modal-nosotros" class="modal">
+    <div class="modal-overlay"></div>
+    <div class="modal-container">
+      <button class="modal-close" aria-label="Cerrar modal">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+      <h3 class="modal-title">Nuestros Pilares</h3>
+      <div class="feature-list">
+        <div class="feature-item">
+          <span class="feature-dot"></span>
+          <div>
+            <p class="feature-title">Lectura de mercado</p>
+            <p class="feature-text">Análisis de demanda, contexto y oportunidad antes de definir el producto.</p>
+          </div>
+        </div>
+        <div class="feature-item">
+          <span class="feature-dot"></span>
+          <div>
+            <p class="feature-title">Definición de producto</p>
+            <p class="feature-text">Tipologías, mix de unidades y atributos diferenciales según el mercado objetivo.</p>
+          </div>
+        </div>
+        <div class="feature-item">
+          <span class="feature-dot"></span>
+          <div>
+            <p class="feature-title">Gestión del desarrollo</p>
+            <p class="feature-text">Coordinación, planificación y control a lo largo de todo el ciclo del proyecto.</p>
+          </div>
+        </div>
+        <div class="feature-item">
+          <span class="feature-dot"></span>
+          <div>
+            <p class="feature-title">Marketing inmobiliario</p>
+            <p class="feature-text">Identidad, narrativa comercial y estrategia de lanzamiento integradas desde el
+              origen.</p>
+          </div>
+        </div>
+        <div class="feature-item">
+          <span class="feature-dot"></span>
+          <div>
+            <p class="feature-title">Comercialización</p>
+            <p class="feature-text">Proceso de venta, gestión de oportunidades y acompañamiento del recorrido comercial.
+            </p>
+          </div>
+        </div>
+        <div class="feature-item">
+          <span class="feature-dot"></span>
+          <div>
+            <p class="feature-title">Relación con inversores</p>
+            <p class="feature-text">Propuestas claras, información precisa y seguimiento durante todo el proceso.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- ================================================================
+     SCRIPTS
+================================================================ -->
+  <script src="https://unpkg.com/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

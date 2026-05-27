@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="es" class="lenis">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="FOT Group — Desarrollos realizados. Proyectos residenciales, comerciales, industriales y educativos completados en Argentina." />
+  <title>Desarrollos — FOT Group</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/images/favicon.png" />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Desarrollos — FOT Group" />
+  <meta property="og:description" content="FOT Group — Desarrollos realizados. Proyectos residenciales, comerciales, industriales y educativos completados en Argentina." />
+  <meta property="og:image" content="assets/images/obras-realizadas/panoramaoffice 1y2.png" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'mn-dark': '#090402',
+            'mn-surface': '#F7F7F7',
+            'mn-accent': '#C8A96A',
+            'mn-muted': '#6B6B6B',
+          },
+          fontFamily: {
+            'heading': ['Urbanist', 'sans-serif'],
+            'body': ['"DM Sans"', 'sans-serif'],
+          },
+        }
+      }
+    }
+  </script>
+
+  <!-- AOS -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+
+  <!-- Custom Design System -->
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body>
+
+  <!-- PROGRESS BAR -->
+  <div id="progress-bar"></div>
+
+  <!-- TOAST -->
+  <div id="toast" role="alert" aria-live="polite"></div>
+
+
+  <!-- ================================================================
+     NAVIGATION
+================================================================ -->
+  <nav id="navbar">
+    <div class="container">
+
+      <a href="index.html" class="nav-logo-link" aria-label="FOT Group — Inicio">
+        <img id="logo-blanco" class="nav-logo-img" src="assets/images/logo-blanco.svg" alt="FOT Group" />
+        <img id="logo-dark" class="nav-logo-img" src="assets/images/logo.svg" alt="FOT Group" />
+      </a>
+
+      <div id="nav-desktop">
+        <a href="index.html#inicio" class="nav-link">Inicio</a>
+        <a href="index.html#nosotros" class="nav-link">Nosotros</a>
+        <a href="desarrollos.html" class="nav-link" style="color: var(--color-accent);">Desarrollos</a>
+        <a href="index.html#marketing" class="nav-link">Marketing</a>
+        <a href="index.html#comercializacion" class="nav-link">Comercialización</a>
+        <a href="index.html#servicios" class="nav-link">Servicios</a>
+        <a href="index.html#contacto" class="nav-cta">Contacto</a>
+      </div>
+
+      <button id="hamburger" class="hamburger" aria-label="Abrir menú">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div id="mobile-menu">
+    <a href="index.html#inicio" class="mobile-link">Inicio</a>
+    <a href="index.html#nosotros" class="mobile-link">Nosotros</a>
+    <a href="desarrollos.html" class="mobile-link">Desarrollos</a>
+    <a href="index.html#marketing" class="mobile-link">Marketing Inmobiliario</a>
+    <a href="index.html#comercializacion" class="mobile-link">Comercialización</a>
+    <a href="index.html#servicios" class="mobile-link">Servicios</a>
+    <a href="index.html#contacto" class="mobile-link">Contacto</a>
+  </div>
+
+
+  <!-- ================================================================
+     PAGE HERO
+================================================================ -->
+  <section style="padding-top: calc(var(--nav-h) + var(--space-xxl)); padding-bottom: var(--space-xxl); background-color: #090402;">
+    <div class="container">
+      <p class="t-label" style="color: var(--color-accent);" data-aos="fade-up">Portfolio</p>
+      <span class="section-divider" style="background: var(--color-accent);"></span>
+      <h1 class="t-h1 text-white" style="max-width: 700px;" data-aos="fade-up" data-aos-delay="80">
+        Desarrollos que construyen nuestra trayectoria.
+      </h1>
+      <p class="t-body-lg mt-6" style="color: rgba(255,255,255,0.65); max-width: 520px;" data-aos="fade-up" data-aos-delay="160">
+        Más de una década de proyectos residenciales, comerciales, industriales y educativos en Argentina.
+      </p>
+    </div>
+  </section>
+
+
+  <!-- ================================================================
+     GRID DE DESARROLLOS
+================================================================ -->
+  <section class="bg-surface section-py">
+    <div class="container">
+
+      <div class="grid-3" id="projects-grid">
+
+        <!-- 1 — Panorama Office (primero) -->
+        <article class="project-card" data-status="terminado" data-aos="fade-up" data-aos-delay="0">
+          <div class="project-card-img">
+            <a href="desarrollos/proyecto-panorama-office.html" aria-label="Ver Panorama Office">
+              <img src="assets/images/obras-realizadas/panoramaoffice 1y2.png" alt="Panorama Office" loading="lazy" />
+            </a>
+            <span class="project-card-badge badge-dark">Entregado</span>
+          </div>
+          <div class="project-card-body">
+            <p class="project-card-cat">Comercial / Oficinas</p>
+            <h3 class="project-card-title">Panorama Office</h3>
+            <p class="project-card-loc">Parque Industrial Buen Ayre, Buenos Aires</p>
+            <p class="project-card-desc">Edificio PB + 4 pisos de oficinas con locales comerciales. Sistema constructivo mixto en estructura metálica y hormigón armado. 2014–2016.</p>
+            <a href="desarrollos/proyecto-panorama-office.html" class="btn btn-outline-dark" style="padding:10px 22px; font-size:12px;">Ver proyecto</a>
+          </div>
+        </article>
+
+        <!-- 2 — Parque Industrial Buen Ayre -->
+        <article class="project-card" data-status="terminado" data-aos="fade-up" data-aos-delay="80">
+          <div class="project-card-img">
+            <a href="desarrollos/proyecto-parque-industrial-buen-ayre.html" aria-label="Ver Parque Industrial Buen Ayre">
+              <img src="assets/images/obras-realizadas/PARQUE INDUSTRIAL BUEN AYRE.png" alt="Parque Industrial Buen Ayre" loading="lazy" />
+            </a>
+            <span class="project-card-badge badge-dark">Entregado</span>
+          </div>
+          <div class="project-card-body">
+            <p class="project-card-cat">Industrial</p>
+            <h3 class="project-card-title">Parque Industrial Buen Ayre</h3>
+            <p class="project-card-loc">Buenos Aires, Argentina</p>
+            <p class="project-card-desc">Infraestructura completa: red pluvial y cloacal, movimiento de suelo, cierre perimetral, banda forestal y delimitación de lotes.</p>
+            <a href="desarrollos/proyecto-parque-industrial-buen-ayre.html" class="btn btn-outline-dark" style="padding:10px 22px; font-size:12px;">Ver proyecto</a>
+          </div>
+        </article>
+
+        <!-- 3 — UF 11 Depósito -->
+        <article class="project-card" data-status="terminado" data-aos="fade-up" data-aos-delay="160">
+          <div class="project-card-img">
+            <a href="desarrollos/proyecto-uf11-deposito.html" aria-label="Ver UF 11 Depósito">
+              <img src="assets/images/obras-realizadas/UNIDAD FUNCIONAL 11 DEPÓSITO .png" alt="Unidad Funcional 11 Depósito" loading="lazy" />
+            </a>
+            <span class="project-card-badge badge-dark">Entregado</span>
+          </div>
+          <div class="project-card-body">
+            <p class="project-card-cat">Logística / Industrial</p>
+            <h3 class="project-card-title">UF 11 — Depósito</h3>
+            <p class="project-card-loc">Parque Industrial Buen Ayre, Buenos Aires</p>
+            <p class="project-card-desc">Depósito 2.840 m² + oficinas 300 m². Estructura de hormigón armado, instalaciones sanitarias, eléctricas, portones y pisos de hormigón.</p>
+            <a href="desarrollos/proyecto-uf11-deposito.html" class="btn btn-outline-dark" style="padding:10px 22px; font-size:12px;">Ver proyecto</a>
+          </div>
+        </article>
+
+        <!-- 4 — UF 44 Depósito -->
+        <article class="project-card" data-status="terminado" data-aos="fade-up" data-aos-delay="0">
+          <div class="project-card-img">
+            <a href="desarrollos/proyecto-uf44-deposito.html" aria-label="Ver UF 44 Depósito">
+              <img src="assets/images/obras-realizadas/UNIDAD FUNCIONAL 44 DEPÓSITO .png" alt="Unidad Funcional 44 Depósito" loading="lazy" />
+            </a>
+            <span class="project-card-badge badge-dark">Entregado</span>
+          </div>
+          <div class="project-card-body">
+            <p class="project-card-cat">Logística / Industrial</p>
+            <h3 class="project-card-title">UF 44 — Depósito</h3>
+            <p class="project-card-loc">Parque Industrial Buen Ayre, Buenos Aires</p>
+            <p class="project-card-desc">Depósito 1.965 m² + oficinas 360 m². Movimiento de suelo, fundaciones, estructura hormigón armado, instalaciones y terminaciones. 2014–2015.</p>
+            <a href="desarrollos/proyecto-uf44-deposito.html" class="btn btn-outline-dark" style="padding:10px 22px; font-size:12px;">Ver proyecto</a>
+          </div>
+        </article>
+
+        <!-- 5 — Polo Oeste -->
+        <article class="project-card" data-status="terminado" data-aos="fade-up" data-aos-delay="80">
+          <div class="project-card-img">
+            <a href="desarrollos/proyecto-polo-oeste.html" aria-label="Ver Polo Oeste">
+              <img src="assets/images/obras-realizadas/POLO OESTE EDIFICIO DE OFICINAS .png" alt="Polo Oeste Edificio de Oficinas" loading="lazy" />
+            </a>
+            <span class="project-card-badge badge-dark">Entregado</span>
+          </div>
+          <div class="project-card-body">
+            <p class="project-card-cat">Comercial / Oficinas</p>
+            <h3 class="project-card-title">Polo Oeste — Edificio de Oficinas</h3>
+            <p class="project-card-loc">Morón, Buenos Aires</p>
+            <p class="project-card-desc">Planta baja comercial y 4 pisos de oficinas. Sistema constructivo mixto en estructura metálica y hormigón armado. 2017–2019.</p>
+            <a href="desarrollos/proyecto-polo-oeste.html" class="btn btn-outline-dark" style="padding:10px 22px; font-size:12px;">Ver proyecto</a>
+          </div>
+        </article>
+
+        <!-- 6 — Parque Solar -->
+        <article class="project-card" data-status="terminado" data-aos="fade-up" data-aos-delay="160">
+          <div class="project-card-img">
+            <a href="desarrollos/proyecto-parque-solar.html" aria-label="Ver Parque Solar">
+              <img src="assets/images/obras-realizadas/PARQUE SOLAR .png" alt="Parque Solar El Dorado" loading="lazy" />
+            </a>
+            <span class="project-card-badge badge-dark">Entregado</span>
+          </div>
+          <div class="project-card-body">
+            <p class="project-card-cat">Energía Renovable</p>
+            <h3 class="project-card-title">Parque Solar "El Dorado"</h3>
+            <p class="project-card-loc">Argentina</p>
+            <p class="project-card-desc">24 módulos fotovoltaicos de 600 W. Capacidad total 144 kW. Ejecución: septiembre 2019 – febrero 2020.</p>
+            <a href="desarrollos/proyecto-parque-solar.html" class="btn btn-outline-dark" style="padding:10px 22px; font-size:12px;">Ver proyecto</a>
+          </div>
+        </article>
+
+        <!-- 7 — Jardín Vivorata -->
+        <article class="project-card" data-status="terminado" data-aos="fade-up" data-aos-delay="0">
+          <div class="project-card-img">
+            <a href="desarrollos/proyecto-jardin-vivorata.html" aria-label="Ver Jardín Vivorata">
+              <img src="assets/images/obras-realizadas/jardin vivorata.jpg" alt="Jardín Vivorata" loading="lazy" />
+            </a>
+            <span class="project-card-badge badge-dark">Entregado</span>
+          </div>
+          <div class="project-card-body">
+            <p class="project-card-cat">Educación / Público</p>
+            <h3 class="project-card-title">Jardín 903 Vivoratá</h3>
+            <p class="project-card-loc">Mar Chiquita, Buenos Aires</p>
+            <p class="project-card-desc">Jardín de infantes — Licitación Pública. 510 m² cubiertos + 241 m² semicubiertos. 3 aulas, SUM, comedor. 2023.</p>
+            <a href="desarrollos/proyecto-jardin-vivorata.html" class="btn btn-outline-dark" style="padding:10px 22px; font-size:12px;">Ver proyecto</a>
+          </div>
+        </article>
+
+        <!-- 8 — Soldado Argentino -->
+        <article class="project-card" data-status="terminado" data-aos="fade-up" data-aos-delay="80">
+          <div class="project-card-img">
+            <a href="desarrollos/proyecto-soldado-argentino.html" aria-label="Ver Soldado Argentino">
+              <img src="assets/images/obras-realizadas/SOLDADO ARGENTINO .png" alt="Soldado Argentino" loading="lazy" />
+            </a>
+            <span class="project-card-badge badge-dark">Entregado</span>
+          </div>
+          <div class="project-card-body">
+            <p class="project-card-cat">Comercial / Oficinas</p>
+            <h3 class="project-card-title">Soldado Argentino</h3>
+            <p class="project-card-loc">Ituzaingó, Buenos Aires</p>
+            <p class="project-card-desc">Edificio comercial PB + EP de 300 m² y 200 m² de oficinas. Demolición, movimiento de suelo, estructura hormigón armado. 2016.</p>
+            <a href="desarrollos/proyecto-soldado-argentino.html" class="btn btn-outline-dark" style="padding:10px 22px; font-size:12px;">Ver proyecto</a>
+          </div>
+        </article>
+
+        <!-- 9 — San Diego -->
+        <article class="project-card" data-status="terminado" data-aos="fade-up" data-aos-delay="160">
+          <div class="project-card-img">
+            <a href="desarrollos/proyecto-san-diego.html" aria-label="Ver San Diego">
+              <img src="assets/images/obras-realizadas/SAN DIEGO .png" alt="San Diego" loading="lazy" />
+            </a>
+            <span class="project-card-badge badge-dark">Entregado</span>
+          </div>
+          <div class="project-card-body">
+            <p class="project-card-cat">Residencial</p>
+            <h3 class="project-card-title">Vivienda San Diego</h3>
+            <p class="project-card-loc">Francisco Álvarez, Buenos Aires</p>
+            <p class="project-card-desc">Vivienda unifamiliar en Barrio Privado San Diego. Construcción septiembre 2021 – noviembre 2023.</p>
+            <a href="desarrollos/proyecto-san-diego.html" class="btn btn-outline-dark" style="padding:10px 22px; font-size:12px;">Ver proyecto</a>
+          </div>
+        </article>
+
+        <!-- 10 — Terravista -->
+        <article class="project-card" data-status="terminado" data-aos="fade-up" data-aos-delay="0">
+          <div class="project-card-img">
+            <a href="desarrollos/proyecto-terravista.html" aria-label="Ver Terravista">
+              <img src="assets/images/obras-realizadas/TERRAVISTA.png" alt="Terravista" loading="lazy" />
+            </a>
+            <span class="project-card-badge badge-dark">Entregado</span>
+          </div>
+          <div class="project-card-body">
+            <p class="project-card-cat">Residencial</p>
+            <h3 class="project-card-title">Vivienda Terravista</h3>
+            <p class="project-card-loc">General Rodríguez, Buenos Aires</p>
+            <p class="project-card-desc">Vivienda unifamiliar en Barrio Privado Terravista. Construcción abril 2021 – enero 2022.</p>
+            <a href="desarrollos/proyecto-terravista.html" class="btn btn-outline-dark" style="padding:10px 22px; font-size:12px;">Ver proyecto</a>
+          </div>
+        </article>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ================================================================
+     CONTACTO CTA
+================================================================ -->
+  <section style="padding-block: var(--space-xxl); background-color: #090402;">
+    <div class="container text-center">
+      <p class="t-label" style="color: var(--color-accent);" data-aos="fade-up">Trabajemos juntos</p>
+      <span class="section-divider" style="background: var(--color-accent); margin-inline: auto;"></span>
+      <h2 class="t-h2 text-white mb-6" data-aos="fade-up" data-aos-delay="80">¿Tenés un proyecto en mente?</h2>
+      <p class="t-body mb-10" style="color: rgba(255,255,255,0.65); max-width: 480px; margin-inline: auto;" data-aos="fade-up" data-aos-delay="160">
+        Contactanos para conversar sobre tu próximo desarrollo inmobiliario.
+      </p>
+      <div data-aos="fade-up" data-aos-delay="240">
+        <a href="index.html#contacto" class="btn btn-primary btn-lg">Hablemos de tu proyecto</a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ================================================================
+     FOOTER
+================================================================ -->
+  <footer class="footer-root">
+    <div class="container" style="padding-block: var(--space-xxl);">
+
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
+
+        <div class="md:col-span-2">
+          <div class="footer-logo">
+            <img src="assets/images/logo-blanco.svg" alt="FOT Group" />
+          </div>
+          <p class="footer-tagline">Desarrollo inmobiliario integral. Producto, gestión, marketing, comercialización e
+            inversión trabajando desde el origen de cada desarrollo.</p>
+        </div>
+
+        <div>
+          <p class="footer-col-label">Secciones</p>
+          <a href="index.html#inicio" class="footer-link">Inicio</a>
+          <a href="index.html#nosotros" class="footer-link">Nosotros</a>
+          <a href="desarrollos.html" class="footer-link">Desarrollos</a>
+          <a href="index.html#marketing" class="footer-link">Marketing Inmobiliario</a>
+          <a href="index.html#comercializacion" class="footer-link">Comercialización</a>
+          <a href="index.html#servicios" class="footer-link">Servicios</a>
+        </div>
+
+        <div>
+          <p class="footer-col-label">Contacto</p>
+          <a href="mailto:contacto@fotgroup.com.ar" class="footer-link">contacto@fotgroup.com.ar</a>
+          <a href="https://wa.me/5491100000000" target="_blank" rel="noopener" class="footer-link">+54 9 11 0000-0000</a>
+          <span class="footer-link" style="cursor:default;">Buenos Aires, Argentina</span>
+        </div>
+
+      </div>
+
+      <div class="footer-divider"></div>
+
+      <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-3">
+        <p class="footer-copy">© 2026 FOT Group. Todos los derechos reservados.</p>
+        <p class="footer-copy">Buenos Aires, Argentina</p>
+      </div>
+
+    </div>
+  </footer>
+
+
+  <!-- ================================================================
+     SCRIPTS
+================================================================ -->
+  <script src="https://unpkg.com/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
